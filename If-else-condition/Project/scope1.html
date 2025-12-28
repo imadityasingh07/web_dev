@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scope</title>
+  </head>
+  <body>
+    <script>
+      let age = 16;
+      let userMessage;
+      if (age > 18) {
+        let userMessage = "You can Vote";
+        console.log(userMessage);
+      } else {
+        let userMessage = "You can't Vote";
+        console.log(userMessage);
+      }
+      console.log(userMessage);
+    </script>
+  </body>
+</html>
