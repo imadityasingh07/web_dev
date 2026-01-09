@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inside Object</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        company: "Orange",
+        price: 888,
+        "item-name": "T-Sheq",
+        displayPrice: function () {
+          console.log(`Price of the product is ₹${this.price}`);
+        },
+      };
+
+      product.displayPrice();
+      // Console.log()
+      // Math.random()
+    </script>
+  </body>
+</html>
