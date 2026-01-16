@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JSON-1</title>
+  </head>
+  <body>
+    <script>
+      let product = {
+        name: "TShop",
+        price: 889,
+        rating: {
+          stars: 4.7,
+          noOfReviews: 667,
+        },
+      };
+
+      //   localStorage.setItem('Name','MY Code');
+      //   localStorage.setItem('Shell','887766');
+
+      // console.log(localStorage.getItem('Name'));
+
+      // localStorage.setItem('product',JSON.stringify('product'));
+      let product2 = JSON.parse(localStorage.getItem("product"));
+      console.log(product2);
+      //
+    </script>
+  </body>
+</html>
