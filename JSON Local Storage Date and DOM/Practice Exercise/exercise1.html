@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice Exercise</title>
+  </head>
+
+  <body>
+    <h3 id="greeting"></h3>
+
+    <script>
+      function doGreeting(personName = "Dear") {
+        let date = new Date();
+        let hours = date.getHours();
+        // let hours = 22; // for testing
+
+        let heading = document.querySelector("#greeting");
+
+        if (hours < 12) {
+          heading.innerText = `Good Morning ${personName}`;
+        } else if (hours >= 12 && hours < 18) {
+          heading.innerText = `Good Afternoon ${personName}`;
+        } else {
+          heading.innerText = `Good Night ${personName}`;
+        }
+      }
+
+      doGreeting("Aditya");
+    </script>
+  </body>
+</html>

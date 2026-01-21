@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Practice Exercise</title>
+
+    <style>
+      #my-button {
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3 id="greeting"></h3>
+    <button id="my-button" onclick="buttonPressed()">0</button>
+
+    <script>
+      let noOfClicked = 0;
+      function buttonPressed() {
+        let button = document.querySelector("#my-button");
+        noOfClicked ++;
+        button.innerText = noOfClicked;
+      }
+    </script>
+  </body>
+</html>
