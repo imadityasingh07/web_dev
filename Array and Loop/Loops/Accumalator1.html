@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Accumulator Loop</title>
+</head>
+<body>
+  <script>
+    let numbers = [3, 6, 7, 9.13];
+    let total = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+      total += numbers[i]; // shorthand accumulator
+    }
+
+    console.log(`The total sum is: ${total}`);
+
+    let squares = [];
+    for (let i = 0; i < numbers.length; i++) {
+      squares.push(numbers[i] * numbers[i]); // accumulating squares
+    }
+    console.log('The squares are:', squares);
+  </script>
+</body>
+</html>
