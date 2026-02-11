@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <script>
+      let sum = function (a, b) {
+        return a + b;
+      };
+
+      let sumThreeNumbers = function (a, b, c, sumTwoNumbers) {
+        let sum1 = sumTwoNumbers(a, b);
+        return sumTwoNumbers(sum1, c);
+      };
+      console.log(sumThreeNumbers(1, 2, 3, sum));
+      console.log(typeof sumThreeNumbers);
+    </script>
+  </body>
+</html>

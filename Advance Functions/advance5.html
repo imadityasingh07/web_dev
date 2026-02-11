@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Set Timeout</title>
+  </head>
+  <body>
+    <script>
+      let alarm = () => 
+        console.log("subah ho gayi, uth jao");
+      let timerId = setTimeout(alarm, 1000);
+      console.log(`Alarm set with timerID: ${timerId}`);
+      setInterval(alarm, 1000);
+    </script>
+  </body>
+</html>
