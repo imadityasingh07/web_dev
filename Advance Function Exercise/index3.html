@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Exercise-3</title>
+    <style>
+      .btn-subscribe {
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+        background-color: rgb(217, 17, 17);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .js-size-double {
+        font-size: 30px;
+        height: 60px;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn-subscribe">Subscribe</button>
+
+    <script>
+      const buttonElement = document.querySelector(".btn-subscribe");
+
+      buttonElement.addEventListener("click", function () {
+        setTimeout(doubleTheSize, 2000);
+      });
+
+      function doubleTheSize() {
+        buttonElement.classList.add("js-size-double");
+      }
+    </script>
+  </body>
+</html>
